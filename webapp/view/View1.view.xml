@@ -1,0 +1,12 @@
+<mvc:View controllerName="indexit.org.databinding.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List items="{/ProductSet}" noDataText="No Data Found" mode="SingleSelectLeft" itemPress="onItemDetails">
+                <StandardListItem title="{ProductID}" description="{Description}" info="{Price}" type="Active"/>
+            </List>
+            <Button id="navBtn" press="onNav" text="view 2"/>
+        </content>
+    </Page>
+</mvc:View>

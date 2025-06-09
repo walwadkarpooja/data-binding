@@ -1,0 +1,24 @@
+<mvc:View controllerName="indexit.org.databinding.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:formatter="indexit/org/databinding/utils/formatter" >
+    <Page id="page2" title="{i18n>title}">
+        <content>
+            <Panel id="_IDGenPanel" headerText="Product Info">
+                <form:SimpleForm id="_IDGenSimpleForm">
+                    <form:content>
+                        <Label id="_IDGenLabel" text="ID"/>
+                        <Input id="_IDGenInput" editable="false" value="{/ProductID}"/>
+                        <Label id="category" text="Category"/>
+                        <Input id="categoryInfo" editable="false" value="{/Category}"/>
+                        <Label id="description" text="Description"/>
+                        <Input id="descriptionInfo" editable="false" value="{/Description}"/>
+                        <Label id="createdat" text="Created at"/>
+                        
+                        <DatePicker value="{path:'/CreatedAt', formatter:'.formatter.formatedDate'}" editable="false"/>
+                        
+                    </form:content>
+                </form:SimpleForm>
+            </Panel>
+            <Button text="welcome"/>
+        </content>
+    </Page>
+</mvc:View>
